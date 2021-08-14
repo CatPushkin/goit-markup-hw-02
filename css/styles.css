@@ -4,6 +4,7 @@
 /* #FFFFFF */
 /* rgba(255, 255, 255, 0.6); */
 /* #000000 */
+/* #F5F4FA */
 
 :root {
   --main-title-color: #ffffff;
@@ -14,8 +15,11 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  color: #212121;
 }
-
+button {
+  cursor: pointer;
+}
 .list {
   list-style: none;
 }
@@ -23,7 +27,7 @@ body {
 .link {
   text-decoration: none;
 }
-/* ---------HEADER--------- */
+/* ----------------HEADER------------------- */
 .logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -51,6 +55,10 @@ body {
   color: var(--accent-color);
 }
 
+.nav-item-link.current {
+  color: #2196f3;
+}
+
 .header-item-link {
   font-weight: 500;
   font-size: 14px;
@@ -63,7 +71,7 @@ body {
 .header-item-link:focus {
   color: var(--accent-color);
 }
-/* -------------MAIN SECTION------------ */
+/* -------------------MAIN SECTION--------------------- */
 
 .main-section-theme {
   background-color: #2f303a;
@@ -151,11 +159,13 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  background-color: #f5f4fa;
 }
 
 .btn-porfolio:hover,
 .btn-porfolio:focus {
   color: var(--main-title-color);
+  background-color: var(--accent-color);
 }
 
 .portfolio-work-name {
@@ -180,12 +190,22 @@ body {
   color: #ffffff;
 }
 
-.contact--address-link {
+.contact-address-link {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+
+.contact-address-link:hover,
+.contact-address-link:focus {
+  color: var(--accent-color);
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--accent-color);
 }
 
 .contact-link {
